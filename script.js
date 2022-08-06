@@ -1,18 +1,20 @@
 'use strict';
 
 const calcSecretNumber = () => Math.trunc(Math.random() * 20) + 1;
+
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
+
 const displayNumber = function (number) {
   document.querySelector('.number').textContent = number;
 };
+
 const displayScore = function (score) {
   document.querySelector('.score').textContent = score;
 };
 
 let secretNumber = calcSecretNumber();
-
 let score = 20;
 let highScore = 0;
 
